@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Us - Maliha's Bakery</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="with-bg">
+  <div class="overlay"></div>
+  <header>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="about-section">
+      <h1 id="mainHeading">Welcome to Maliha's Bakery</h1>
+      <h3><i>
+        At Maliha's Bakery, we believe every sweet treat tells a story. From freshly baked cupcakes to custom-designed celebration cakes, our passion is creating delicious memories for every occasion. </i>
+      </h3>
+      <div class="about-image1">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.ecL8ZMNHAMv5Q4thwc5ETwHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3">
+        <p class="img-text1">Our freshly baked chocolate cake is everyone’s favorite!</p>
+      </div>
+      <h3><i>Founded by Maliha, our bakery is known for quality ingredients, creative designs, and a warm, welcoming vibe. Come visit us or order online – sweetness is just a bite away!</i></h3>
+      <div class="about-image2">
+        <img src="https://thumbs.dreamstime.com/b/team-bakers-smiling-camera-kitchen-bakery-49287876.jpg">
+        <p class="img-text2">Meet our amazing team behind the sweet creations!</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Maliha's Bakery. All rights reserved.</p>
+  </footer>
+ <script>
+    // Wait for the page to fully load
+    window.addEventListener("DOMContentLoaded", () => {
+      const heading = document.getElementById("mainHeading");
+      heading.style.opacity = "0";
+      heading.style.transform = "translateY(30px)";
+      heading.style.transition = "all 1s ease-in-out";
+
+      // Trigger animation after slight delay
+      setTimeout(() => {
+        heading.style.opacity = "1";
+        heading.style.transform = "translateY(0)";
+      }, 300);
+    });
+  </script>
+</body>
+</html>

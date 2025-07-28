@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Our Products - Maliha's Bakery</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body  class="with-bg">
+  <div class="overlay"></div>
+  <header>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html" class="active">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="products">
+  <h1 id="productHeading">Our Delicious Products</h1>
+  <p class="subtitle">Indulge in our variety of freshly baked treats – from cupcakes and cookies to layered cakes and brownies. Each item is handcrafted with love and premium ingredients!</p>
+
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="https://th.bing.com/th/id/R.8d73def51f13ea2f47dad9e4f07d39ca?rik=LZphscLZ9mnocg&riu=http%3a%2f%2fwww.vvsupremo.com%2fwp-content%2fuploads%2f2017%2f04%2fEaster-Lemon-Cream-Cupcakes-900x570-sRGB.jpg&ehk=d1dZ4cazfOcvo%2bQWutAZ9NNsTAKftt6wF%2boF8pfN9X0%3d&risl=&pid=ImgRaw&r=0" alt="Cupcakes">
+      <p>Custom Cupcakes</p>
+    </div>
+    <div class="product-card">
+      <img src="https://i.pinimg.com/736x/28/6d/ce/286dce9cc90842f577a7af6d4fe60822.jpg" alt="Cakes">
+      <p>Celebration Cakes</p>
+    </div>
+    <div class="product-card">
+      <img src="https://static.vecteezy.com/system/resources/previews/030/232/017/large_2x/close-up-side-view-of-moist-dark-chocolate-brownies-dessert-a-tempting-homemade-delight-with-decadent-fudgy-texture-set-against-a-rich-and-dark-background-moist-food-background-ai-generative-photo.jpg" alt="Brownies">
+      <p>Fresh Brownies</p>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Maliha's Bakery. All rights reserved.</p>
+  </footer>
+
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      const heading = document.getElementById("mainHeading");
+      heading.style.opacity = "0";
+      heading.style.transform = "translateY(30px)";
+      heading.style.transition = "all 1s ease-in-out";
+
+      setTimeout(() => {
+        heading.style.opacity = "1";
+        heading.style.transform = "translateY(0)";
+      }, 300);
+    });
+  </script>
+  <script>
+  window.addEventListener("DOMContentLoaded", () => {
+    const productHeading = document.getElementById("productHeading");
+    productHeading.style.opacity = "0";
+    productHeading.style.transform = "translateY(30px)";
+    productHeading.style.transition = "all 1s ease-in-out";
+
+    setTimeout(() => {
+      productHeading.style.opacity = "1";
+      productHeading.style.transform = "translateY(0)";
+    }, 300);
+  });
+</script>
+
+</body>
+</html>
+
+

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact Us - Maliha's Bakery</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="contact-body">
+  <header>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-container">
+      <h1 id="mainHeading">Get in Touch</h1>
+      <p class="subtitle">We’d love to hear from you! Whether it's a question, feedback, or a custom order request — reach out below.</p>
+
+      <form>
+        <label>Full Name</label>
+        <input type="text" placeholder="Your Name" required />
+
+        <label>Email</label>
+        <input type="email" placeholder="you@example.com" required />
+
+        <label>Phone Number</label>
+        <input type="tel" placeholder="03XX-XXXXXXX" required />
+
+        <label>Message</label>
+        <textarea placeholder="Write your message..." required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+
+      <div class="extra-contact">
+        <p><strong>Email:</strong> maliha.b444@gmail.com</p>
+        <p><strong>Phone:</strong>03XX-XXXXXXX</p>
+        <p><strong>Address:</strong>Faisalabad,Punjab,Pakistan</p>
+       <a href="#">Message us on WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Maliha's Bakery. All rights reserved.</p>
+  </footer>
+
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      const heading = document.getElementById("mainHeading");
+      heading.style.opacity = "0";
+      heading.style.transform = "translateY(30px)";
+      heading.style.transition = "all 1s ease-in-out";
+
+      setTimeout(() => {
+        heading.style.opacity = "1";
+        heading.style.transform = "translateY(0)";
+      }, 300);
+    });
+  </script>
+</body>
+</html>

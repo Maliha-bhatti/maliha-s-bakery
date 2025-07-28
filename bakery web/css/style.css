@@ -1,0 +1,359 @@
+/* Reset and global settings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Background image and overlay for selected pages only */
+body.with-bg {
+  background: url('../images/bg.jpg') no-repeat center center/cover;
+  position: relative;
+  color: white;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* dark overlay */
+  z-index: -1;
+}
+
+
+
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color:black;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: center;/*home waghaira ko center m krny k liye*/
+  align-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+ 	color:#1DA851;
+  text-decoration: none;
+  font-weight: bold;
+  transition: var(--bg-color) 0.3s;
+  padding: 10px 15px;
+  display: inline-block;
+}
+
+.nav-links li a:hover {
+  background-color: lightcoral;
+  border-radius: 5px;
+}
+
+/* Banner Section */
+.banner {
+  background: url('https://i.pinimg.com/736x/3a/38/d1/3a38d1efc7e87c5a55aed620fc2474c2.jpg');
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.banner-content {
+  background: linear-gradient(135deg, rgba(255, 182, 193, 0.85), rgba(255, 105, 180, 0.85));
+  padding: 40px;
+  border-radius: 20px;
+  color: white;
+  max-width: 600px;
+}
+
+.banner-content h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+}
+
+.banner-content p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.banner-content button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  background-color: white;
+  color: #ff69b4;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.banner-content button:hover {
+  background-color: #ff1493;
+  color: white;
+}
+
+/* Featured Products */
+.featured-products {
+  padding: 60px 20px;
+  background: linear-gradient(180deg, #fff5f9 0%, #ffe4e9 100%);
+  text-align: center;
+}
+
+
+.featured-products h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #ff1493;
+}
+
+/* Product Grid */
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+/* Product Card */
+.product-card {
+  flex: 0 1 280px; /* Shrinks or grows within flexbox */
+  background-color: #fff8f0;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.product-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.product-card h3 {
+  margin-top: 15px;
+  color: #d63384;
+  font-size: 1.3rem;
+}
+
+.product-card p {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(90deg, #ff69b4, #ff85c1, #ffb6c1);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 0.95rem;
+}
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --bg-color: #fff0f5;
+  --text-color: #333;
+  --card-bg: white;
+  --banner-overlay: rgba(255, 105, 180, 0.8);
+  --primary-color: #ff69b4;
+}
+
+
+.product-card {
+  background-color: var(--card-bg);
+}
+
+/* Dark Mode Theme */
+body.dark-mode {
+  --bg-color: #121212;
+  --text-color: #f0f0f0;
+  --card-bg: #1e1e1e;
+  --banner-overlay: rgba(255, 105, 180, 0.2);
+  --primary-color: #ff1493;
+}
+
+.theme-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+  margin-left: 20px;
+}
+
+.about-section {
+  padding: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #ce2759;
+  border-radius: 10px;
+  margin-top: 30px;
+  box-shadow: 0 4px 12px rgba(196, 108, 142, 0.904);
+  animation: fadeIn 1.2s ease-out;
+}
+.about-image1,
+.about-image2 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.about-image1 img,
+.about-image2 img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  border: 3px double darkgreen;
+}
+
+.about-image1 img:hover,
+.about-image2 img:hover {
+  transform: scale(1.05);
+}/*Jab tum image pe mouse lekar jaogi (hover) to image thoda zoom (1.05x) ho jayegi.
+
+transform: scale(1.05); means image ka size 5% barh jaata hai (zoom effect).*/
+#mainHeading{
+  opacity:0;
+  transform: translateY(30px);
+}
+h1{
+  color:darkgreen;
+}
+#productHeading {
+  opacity: 0;
+  transform: translateY(30px) scale(0.95);
+  transition: all 1s ease-in-out;
+  text-align: center;
+  color: #c1440e;
+  margin-top: 30px;
+}
+p{
+  color: #121212;
+}
+/* Background Image for Contact Page */
+.contact-body {
+  background: url('https://as1.ftcdn.net/v2/jpg/04/35/48/82/1000_F_435488204_MIEmZGHXKYhKelqz1kcDmbCEAiYo6qoI.jpg')no-repeat center center/cover;
+  min-height: 100vh;
+}
+
+/* Contact Container Styling */
+.contact-container {
+  max-width: 600px;
+  margin: 100px auto;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  border-radius: 15px;
+  padding: 40px;
+  color: #fff;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.contact-container h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.contact-container .subtitle {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #f1f1f1;
+}
+
+.contact-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-container label {
+  margin: 10px 0 5px;
+  font-weight: 500;
+}
+
+.contact-container input,
+.contact-container textarea {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  margin-bottom: 15px;
+  outline: none;
+}
+
+.contact-container textarea {
+  height: 100px;
+}
+
+.contact-container button {
+  padding: 12px;
+  background-color: #d2691e;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-container button:hover {
+  background-color: #a55215;
+}
+
+.extra-contact {
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.whatsapp-link {
+  display: inline-block;
+  background-color: #25D366;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.whatsapp-link:hover {
+  background-color: #1DA851;
+}
+
+@media (max-width: 600px) {
+  .contact-container {
+    margin: 50px 15px;
+    padding: 25px;
+  }
+}
+body.home-page {
+  background-image: none;
+  background-color:lightsalmon;
+  color: #333; /* Dark text for better readability */
+}
